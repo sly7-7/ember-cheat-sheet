@@ -28,6 +28,7 @@ component:
     # order.
     #
     locale-en-US: English (US)
+    locale-eo: Esperanto
     locale-es: Spanish
     locale-fr-FR: Français
     locale-ja: 日本語
