@@ -4,7 +4,7 @@ import Service, { inject as service } from '@ember/service';
   To help with maintenance, please list
   the supported locales in alphabetical order.
 */
-export const supportedLocales = new Set(['en-US', 'es', 'fr-FR', 'ja', 'pt-BR', 'tr']);
+export const supportedLocales = new Set(['en-US', 'eo', 'es', 'fr-FR', 'ja', 'pt-BR', 'tr']);
 
 export default class LocaleService extends Service {
   @service intl;
