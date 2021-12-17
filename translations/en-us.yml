@@ -2,6 +2,7 @@ layout:
   application:
     title: Ember.js Cheat Sheet
     shortTitle: Cheat Sheet
+    logo-alt-text: 'The Ember logo next to the words "Cheet Sheet" (in English)'
     description-1: >
       This guide is a cheat sheet for using '<a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">'Ember.js'</a>'.
       It doesn't cover everything, but it should get you started!
@@ -20,6 +21,9 @@ nav:
 component:
   guide-section:
     section: §
+    subsection:
+      classic: Classic
+      octane: Octane
     references: 'References:'
     edit-translation-text: Edit Translation
   locale-menu:
