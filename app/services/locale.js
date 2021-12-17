@@ -4,7 +4,7 @@ import Service, { inject as service } from '@ember/service';
   To help with maintenance, please list
   the supported locales in alphabetical order.
 */
-export const supportedLocales = new Set(['en-US', 'es', 'fr-FR', 'ja', 'pt-BR', 'tr']);
+export const supportedLocales = new Set(['en-US', 'eo', 'es', 'fr-FR', 'ja', 'pt-BR', 'tr']);
 
 export default class LocaleService extends Service {
   @service intl;
@@ -16,14 +16,7 @@ export default class LocaleService extends Service {
         value: locale,
       };
     })
-    .sort((a, b) => {
-      const aValue = a.label.toLowerCase();
-      const bValue = b.label.toLowerCase();
-
-      if (aValue > bValue) return 1;
-      if (aValue < bValue) return -1;
-      return 0;
-    });
+    .sort((a, b) => a.label.localeCompare(b.label, this.intl.primaryLocale));
 
   updateSiteLocale(locale) {
     if (!supportedLocales.has(locale)) {

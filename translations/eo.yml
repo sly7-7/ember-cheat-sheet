@@ -2,6 +2,7 @@ layout:
   application:
     title: Ember.js Memorhelpo
     shortTitle: Memorhelpo
+    logo-alt-text: 'La Ember-emblemo apud la vortoj "Cheat Sheet" (en la angla)'
     description-1: >
       Ĉi tiu gvidilo estas Memorhelpo por uzi '<a href="https://emberjs.com/editions/octane" target="_blank" rel="noopener noreferrer">'Ember.js'</a>'.
       Ĝi ne kovras ĉion, sed ĝi devus komenci vin!
@@ -20,6 +21,9 @@ nav:
 component:
   guide-section:
     section: §
+    subsection:
+      classic: Klasika
+      octane: Oktane eldono
     references: 'Referencoj:'
     edit-translation-text: Redaktu tradukon
   locale-menu:
