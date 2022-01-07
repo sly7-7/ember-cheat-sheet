@@ -2,13 +2,13 @@ title: La Grammaire
 description: >
   La grammaire des Modèles (<i>Templates</i>) Ember est délibérément simple pour que le moteur de rendu 
   <a href="https://github.com/glimmerjs/glimmer-vm">GlimmerVM</a> soit rapide.
-  Elle est suit les principes des 
+  Elle suit les principes des 
   <a href="https://fr.wikipedia.org/wiki/S-expression">S-Expressions ou expressions symboliques</a>, 
   une structure en arbre permettant de simplifier la syntaxe, la construction et la décomposition des Modèles.
   <br>
   Si vous êtes familier avec TypeScript, vous pouvez définir un Modèle suivant le pseudo-code ci-dessous :
 plain-function: >
-  Notez que les Aides de fonction simple (<i>plain function Helpers</i>) ne sont pas supportées sans un
+  Notez que les Aides purement fonctionnelles (<i>plain function Helpers</i>) ne sont pas supportées sans un
   <a href="https://github.com/emberjs/rfcs/blob/master/text/0625-helper-managers.md">gestionnaire d'Aides</a> 
   dédié comme celui fourni avec l'extension
   <a href="https://github.com/pzuraq/ember-could-get-used-to-this">ember-could-get-used-to-this</a>. 
@@ -16,7 +16,7 @@ plain-function: >
   <a href="https://github.com/emberjs/rfcs/pull/756">RFC#756: Default Helper Manager</a>.
 
 expression-breakdown: >
-  Dans cet exemple, <code>a</code> peut être <em>seulement</em> une Aide.
+  Dans cet exemple, <code>a</code> peut être <em>uniquement</em> une Aide.
   Alors que <code>b</code>, <code>c</code>, et <code>e</code> ne peuvent
   être que des valeurs brutes, car une fonction ne peut pas être appelée
   sans être préalablement écrite entre parenthèses.
